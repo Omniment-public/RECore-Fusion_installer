@@ -69,8 +69,8 @@ sudo bash -c "echo $NAME_JUPYTER >> $INSTALL_QUEUE"
 
 mkdir $INSTALL_DIR/$NAME_SYS
 mkdir $INSTALL_DIR/$NAME_JUPYTER
-mv -f ./RECore-Fusion_sys-$0.tar.gz $INSTALL_DIR/$NAME_SYS/"installer.tar.gz"
-mv -f ./recore-jupyter-$1.tar.gz $INSTALL_DIR/$NAME_JUPYTER/"installer.tar.gz"
+mv -f ./RECore-Fusion_sys-$1.tar.gz $INSTALL_DIR/$NAME_SYS/"installer.tar.gz"
+mv -f ./recore-jupyter-$2.tar.gz $INSTALL_DIR/$NAME_JUPYTER/"installer.tar.gz"
 
 rm ../RECore-Fusion_setup_offline.tar.gz
 rm -rf ../RECore-Fusion_setup_offline
