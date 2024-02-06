@@ -9,6 +9,16 @@ if [ $# != 2 ]; then
     exit 1
 fi
 
+if [ ! -e RECore-Fusion_sys-$1.tar.gz ]; then
+	echo "no such file"
+	exit 1
+fi
+
+if [ ! -e recore-jupyter-$2.tar.gz ]; then
+	echo "no such file"
+	exit 1
+fi
+
 DUMMY_VERSION="v0.0.0"
 
 NAME_SYS="RECore-Fusion_sys"
